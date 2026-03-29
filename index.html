@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Are we still friends?</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #000;
+        color: white;
+        padding: 50px;
+    }
+    button {
+        padding: 12px 25px;
+        margin: 10px;
+        font-size: 18px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    #yesBtn {
+        background-color: white;
+        color: black;
+    }
+    #noBtn {
+        background-color: grey;
+        color: white;
+    }
+    #message {
+        margin-top: 30px;
+        font-size: 18px;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.6;
+    }
+</style>
+</head>
+
+<body>
+
+<h1>Are we still friends? 💭</h1>
+
+<button id="yesBtn">Yes 🤍</button>
+<button id="noBtn">No 🥺</button>
+
+<div id="message"></div>
+
+<script>
+let yesCount = 0;
+
+document.getElementById("yesBtn").onclick = function() {
+    yesCount++;
+
+    if (yesCount === 1) {
+        document.getElementById("message").innerText = "aisa lgta toh nahi hai 😏";
+    } 
+    else if (yesCount === 2) {
+        document.getElementById("message").innerText = "aap kya Akash me aur mai kha 🫠";
+    } 
+    else if (yesCount === 3) {
+        document.getElementById("message").innerText = `Sometimes life takes us in different directions, to different cities, different routines, different people… but there are some bonds that distance can never weaken and ours is one of them. 🤍
+
+I was just thinking about you today, and it made me realize how lucky I am to have someone like you in my life. You’re not just my best friend, you’re my comfort place, my safe space, my constant no matter how far apart we are right now.
+
+You know what makes you so special? It’s the way you understand without needing too many words. The way you listen so patiently, never judging, always caring. Your heart is honestly one of the kindest I’ve ever known. You have this beautiful soul that naturally spreads warmth and peace to everyone around you, including me.
+
+And your eyes… they’re not just beautiful, they’re full of emotions, kindness, innocence, strength, and so much depth. Anyone who looks into them can feel how genuine you are. They reflect the purity of your heart, and honestly, they’re one of the most comforting things about you.
+
+You’re so talented, and I don’t think you even realize how amazing you are sometimes. The way you dance with so much grace and expression it’s like you tell stories without speaking. The way you sing it’s soft, beautiful, and full of feeling. And in studies too, your dedication and hard work always stand out. You’re truly outstanding in every way, and I’m so proud of you for everything you are and everything you’re becoming.
+
+I miss you. I miss our random talks, our laughs, the way we could sit and do nothing but still feel so happy. But even though we’re in different states now, I want you to know that nothing has changed for me. You’re still my person. Distance is just a small thing when the connection is this real.
+
+No matter where life takes us, I’ll always be there for you cheering for you, supporting you, and loving you the same way I always have. 💫
+
+✨ You are stronger than you think and more capable than you realize.
+✨ Your kindness is your superpower never let the world change that.
+✨ You are enough, just as you are.
+✨ No distance can ever reduce how important you are to me.`;
+    }
+};
+
+document.getElementById("noBtn").onclick = function() {
+    document.getElementById("message").innerText = "Bas ab ‘Yes’ hi dabao 🤭";
+};
+</script>
+
+</body>
+</html>
